@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: antiquewhite;
+}
+
+.panel {
+    flex: 0.5;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 38px;
+    padding: 10px;
+    transition: all 0.7s ease-in-out;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.panel img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50px;
+}
+
+.panel.active {
+    flex: 5;
+}
